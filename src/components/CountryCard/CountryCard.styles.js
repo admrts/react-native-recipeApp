@@ -3,28 +3,28 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     flexDirection: "row",
-    padding: 10,
-    margin: 5,
+    gap: 10,
+    alignItems: "center",
+    margin: 10,
+    padding: 5,
     borderRadius: 5,
     borderWidth: 1,
     borderColor: "#E4DCCF",
     justifyContent: "space-between",
-    alignItems: "center",
   },
   image_title_container: {
     flexDirection: "row",
     alignItems: "center",
     gap: 20,
-    flex: 1,
   },
   image: {
     width: 120,
-    height: 100,
-    borderRadius: 10,
+    height: 70,
+    borderWidth: 1,
+    borderRadius: 5,
   },
   text: {
+    fontWeight: "600",
     fontSize: 18,
-    fontWeight: "bold",
-    flex: 1,
   },
 });

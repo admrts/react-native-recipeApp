@@ -35,7 +35,8 @@ const CountriesStack = () => {
       }}
     >
       <Stack.Screen name="Countries" component={Countries} />
-      <Stack.Screen name="country1" component={Country} />
+      <Stack.Screen name="Country" component={Country} />
+      <Stack.Screen name="Detail" component={Detail} />
     </Stack.Navigator>
   );
 };
