@@ -4,10 +4,10 @@ const { width, height } = Dimensions.get("window");
 
 export default StyleSheet.create({
   container: {
-    padding: 5,
+    padding: 10,
   },
   image: {
-    width: width - 10,
+    width: width - 20,
     height: height / 2.5,
     borderWidth: 2,
   },
