@@ -14,6 +14,7 @@ export default StyleSheet.create({
   title: {
     fontWeight: "bold",
     fontSize: 30,
+    marginVertical: 5,
   },
   text: {
     fontSize: 20,
