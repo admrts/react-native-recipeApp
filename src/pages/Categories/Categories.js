@@ -1,9 +1,9 @@
-import { View, FlatList, StyleSheet, SafeAreaView } from "react-native";
+import { FlatList, StyleSheet, SafeAreaView } from "react-native";
 import ItemCard from "../../components/ItemCard/ItemCard";
-import useFetchCategories from "../../hooks/useFetch/useFetchCategories";
+import useFetch from "../../hooks/useFetch/useFetch";
 
 const Categories = () => {
-  const { data, error, loading } = useFetchCategories(
+  const { data, error, loading } = useFetch(
     "https://www.themealdb.com/api/json/v1/1/categories.php"
   );
 

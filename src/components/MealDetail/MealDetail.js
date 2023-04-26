@@ -3,8 +3,6 @@ import { View, Text, Image, ScrollView } from "react-native";
 import styles from "./MealDetail.styles";
 
 export default function MealDetail({ data, error, loading }) {
-  console.log(data);
-
   if (error) {
     return (
       <View>

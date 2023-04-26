@@ -17,6 +17,7 @@ const CategoriesStack = () => {
       screenOptions={{
         headerStyle: { backgroundColor: "#EA5455" },
         headerTitleStyle: { color: "#F9F5EB" },
+        headerTintColor: "#F9F5EB",
       }}
     >
       <Stack.Screen name="Categories" component={Categories} />
@@ -32,6 +33,7 @@ const CountriesStack = () => {
       screenOptions={{
         headerStyle: { backgroundColor: "#EA5455" },
         headerTitleStyle: { color: "#F9F5EB" },
+        headerTintColor: "#F9F5EB",
       }}
     >
       <Stack.Screen name="Countries" component={Countries} />

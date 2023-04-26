@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, SafeAreaView, FlatList } from "react-native";
-import useFetchCountry from "../../../hooks/useFetch/useFetchCountry";
 import MealCard from "../../../components/MealCard/MealCard";
+import useFetch from "../../../hooks/useFetch/useFetch";
 
 export default function Country({ route }) {
   const { name } = route.params.data;
-  const { data, error, loading } = useFetchCountry(
+  const { data, error, loading } = useFetch(
     `https://www.themealdb.com/api/json/v1/1/filter.php?a=${name}`
   );
   if (error) {

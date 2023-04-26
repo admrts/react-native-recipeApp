@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const useFetchCategories = (url) => {
+const useFetch = (url) => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -10,7 +10,15 @@ const useFetchCategories = (url) => {
     try {
       const { data: categoryData } = await axios(url);
 
-      setData(categoryData.categories);
+      if (categoryData.categories) {
+        setData(categoryData.categories);
+      } else if (categoryData.meals) {
+        if (categoryData.meals.length > 1) {
+          setData(categoryData.meals);
+        } else {
+          setData(categoryData.meals[0]);
+        }
+      }
       setLoading(false);
     } catch (error) {
       setError(error.message);
@@ -23,4 +31,4 @@ const useFetchCategories = (url) => {
 
   return { data, error, loading };
 };
-export default useFetchCategories;
+export default useFetch;
