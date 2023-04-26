@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 const MealCard = ({ data }) => {
   const navigation = useNavigation();
   const handleTouch = () => {
-    // navigation.navigate("Category", { data });
+    navigation.navigate("Detail", { data });
   };
   return (
     <TouchableOpacity style={styles.container} onPress={handleTouch}>

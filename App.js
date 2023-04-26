@@ -6,6 +6,7 @@ import Categories from "./src/pages/Categories/Categories";
 import Category from "./src/pages/Categories/Category/Category";
 import Countries from "./src/pages/Countries/Countries";
 import Country from "./src/pages/Countries/Country/Country";
+import Detail from "./src/pages/Categories/Category/Detail/Detail";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ const CategoriesStack = () => {
     >
       <Stack.Screen name="Categories" component={Categories} />
       <Stack.Screen name="Category" component={Category} />
+      <Stack.Screen name="Detail" component={Detail} />
     </Stack.Navigator>
   );
 };

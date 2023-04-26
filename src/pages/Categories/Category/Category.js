@@ -1,11 +1,4 @@
-import {
-  Text,
-  View,
-  SafeAreaView,
-  StyleSheet,
-  Image,
-  FlatList,
-} from "react-native";
+import { SafeAreaView, FlatList } from "react-native";
 import React from "react";
 import useFetchCategory from "../../../hooks/useFetch/useFetchCategory";
 import MealCard from "../../../components/MealCard/MealCard";
@@ -26,11 +19,3 @@ export default function Category({ route }) {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  image: {
-    width: 120,
-    height: 100,
-    resizeMode: "contain",
-  },
-});
