@@ -8,7 +8,7 @@ const CountryCard = ({ data }) => {
   const navigation = useNavigation();
 
   const handleTouch = () => {
-    navigation.navigate("Country", { data });
+    navigation.navigate("Country", { data, title: data.name });
   };
   return (
     <TouchableOpacity style={styles.container} onPress={handleTouch}>

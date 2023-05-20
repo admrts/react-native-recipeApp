@@ -21,8 +21,20 @@ const CategoriesStack = () => {
       }}
     >
       <Stack.Screen name="Categories" component={Categories} />
-      <Stack.Screen name="Category" component={Category} />
-      <Stack.Screen name="Detail" component={Detail} />
+      <Stack.Screen
+        name="Category"
+        component={Category}
+        options={({ route }) => ({
+          title: route.params.title,
+        })}
+      />
+      <Stack.Screen
+        name="Detail"
+        component={Detail}
+        options={({ route }) => ({
+          title: route.params.title,
+        })}
+      />
     </Stack.Navigator>
   );
 };
@@ -37,8 +49,20 @@ const CountriesStack = () => {
       }}
     >
       <Stack.Screen name="Countries" component={Countries} />
-      <Stack.Screen name="Country" component={Country} />
-      <Stack.Screen name="Detail" component={Detail} />
+      <Stack.Screen
+        name="Country"
+        component={Country}
+        options={({ route }) => ({
+          title: route.params.title,
+        })}
+      />
+      <Stack.Screen
+        name="Detail"
+        component={Detail}
+        options={({ route }) => ({
+          title: route.params.title,
+        })}
+      />
     </Stack.Navigator>
   );
 };
